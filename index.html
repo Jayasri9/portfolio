@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jayasri Singamsetti</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#certificates">certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Jayasri Singamsetti</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+            <li><a href="#certificates" onclick="toggleMenu()">certificates</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="resume_profile.jpg" alt="John Doe profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Bala Jayasri Singamsetti</h1>
+          <p class="section__text__p2">B.Tech Student</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('22WH1A0569.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="download.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/bala-jayasri-singamsetti-125046259/'"
+            />
+            <img
+              src="Github-logo.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/Jayasri9'"
+            />
+          </div>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+        />
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="abt_me.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="edu.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Tech - BVRITH College of Engineering for Women</p>
+                <p>
+                  I am a Computer Science and Technology undergraduate at BVRIT Hyderabad with a passion for AI, machine learning, and problem-solving. Skilled in Python, C, and SQL, I have worked on projects like a flight reservation system and an ML-based fruit and vegetable recognition tool. I hold certifications in cybersecurity, Python for ML, and DSA. Always eager to learn and innovate, I enjoy collaborating on tech-driven solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="home.png"
+          alt="Home icon"
+          class="icon home"
+          onclick="location.href='#profile'"
+        />
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Projects</h1>
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="yahtzee.jpg" alt="Yahtzee Project" class="project-img">
+                <h3>Yahtzee</h3>
+                <p>Implemented a GUI-based Yahtzee game using Python.</p>
+                <a href="https://github.com/Jayasri9/Projects/blob/fbbf50cbf8843cc779cda241d28fc11ce5721015/yahtzee.txt" target="_blank">View Project</a>
+            </div>
+            <div class="details-container">
+                <img src="frs.webp" alt="Flight Reservation System" class="project-img">
+                <h3>Flight Reservation System</h3>
+                <p>Developed a flight booking system using C and data structures.</p>
+                <a href="https://github.com/Jayasri9/Projects/blob/1d11116fe6f21ffd85875499825a89549dde32cb/DS_Projectt.txt" target="_blank">View Project</a>
+            </div>
+            <div class="details-container">
+                <img src="fvr.jpg" alt="Fruits Recognition" class="project-img">
+                <h3>Fruits and Vegetables Recognition</h3>
+                <p>Machine learning-based system to recognize fruits and vegetables with calorie estimation.</p>
+                <a href="https://github.com/Jayasri9/Machine-Learning-Image-based-Fruits-and-Vegetables-Recognition-with-calories" target="_blank">View Project</a>
+            </div>
+        </div>
+        <img
+          src="home.png"
+          alt="Home icon"
+          class="icon home"
+          onclick="location.href='#profile'"
+        />
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#skills'"
+        />
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <p class="section__text__p1">My Expertise</p>
+        <h1 class="title">Skills</h1>
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="programming.webp" alt="Programming Icon" class="skill-icon">
+                <h3>Programming</h3>
+                <p>Python, C, Java (Basic), HTML, CSS, SQL, JavaScript (Basic)</p>
+            </div>
+            <div class="details-container">
+                <img src="cw.jpg" alt="Course Work Icon" class="skill-icon">
+                <h3>Course Work</h3>
+                <p>Data Structures & Algorithms, Data Science, Object-Oriented Programming</p>
+            </div>
+            <div class="details-container">
+                <img src="tools.png" alt="Tools Icon" class="skill-icon">
+                <h3>Tools & Platforms</h3>
+                <p>Windows, Ubuntu, Tableau, Visual Studio, github, google drive, jenkins</p>
+            </div>
+        </div>
+        <img
+          src="home.png"
+          alt="Home icon"
+          class="icon home"
+          onclick="location.href='#profile'"
+        />
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#certificates'"
+        />
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates">
+        <p class="section__text__p1">My Achievements</p>
+        <h1 class="title">Certificates</h1>
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="cys.png" alt="Cybersecurity Icon" class="cert-icon">
+                <h3>Cybersecurity Fundamentals</h3>
+                <p>IBM Certified</p>
+            </div>
+            <div class="details-container">
+                <img src="py icon.png" alt="Python ML Icon" class="cert-icon">
+                <h3>Python for Machine Learning</h3>
+                <p>Great Learning Academy</p>
+            </div>
+            <div class="details-container">
+                <img src="sj.png" alt="SQL Java Icon" class="cert-icon">
+                <h3>SQL & Java Basics</h3>
+                <p>HackerRank Certified</p>
+            </div>
+            <div class="details-container">
+              <img src="si.jpeg" alt="SC Icon" class="cert-icon">
+              <h3>DSA Batch-37</h3>
+              <p>Smart Interviews Certified</p>
+          </div>
+          <div class="details-container">
+            <img src="nxt.jpg" alt="SW Icon" class="cert-icon">
+            <h3>Static website</h3>
+            <p>Nxtwave Certified</p>
+        </div>
+        <div class="details-container">
+          <img src="dell.jpg" alt="Dell Icon" class="cert-icon">
+          <h3>Stem Aspire Mentee</h3>
+          <p>Dell Certified</p>
+      </div>
+        </div>
+        <img
+          src="home.png"
+          alt="Home icon"
+          class="icon home"
+          onclick="location.href='#profile'"
+        />
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <p>Email: <a href="mailto:jayasrisingamsetti94@gmail.com">jayasrisingamsetti94@gmail.com</a></p>
+            <p>Phone: +91-7995240531</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bala-jayasri-singamsetti-125046259/" target="_blank">Profile</a></p>
+            <p>GitHub: <a href="https://github.com/Jayasri9" target="_blank">Profile</a></p>
+        </div>
+        <img
+          src="home.png"
+          alt="Home icon"
+          class="icon home"
+          onclick="location.href='#profile'"
+        />
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+        />
+      </section>
+
+    <script src="script.js"></script>  
+</body>
+</html>
